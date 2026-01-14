@@ -14,8 +14,9 @@ h1 {
     color: #090808;
 }
 
-h2,h3,h4,h5 {     /*   De esta manera los tres header copartiran la misma propiedad*/
-    margin-left:550px;
+h2, h3, h4, h5 {
+    max-width: 800px;
+    margin: 0 auto;
     font-size: 20px;
     color: #007BFF;
 }
