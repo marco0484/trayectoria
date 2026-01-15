@@ -14,11 +14,11 @@ h1 {
     color: #090808;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h7 {. /* Titulos de los trabajos que he tenido */
     max-width: 800px;
     margin: 0 auto;
     font-size: 20px;
-    color: #007BFF;
+    color: #060606;
 }
 
 h6{
