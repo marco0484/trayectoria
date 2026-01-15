@@ -12,6 +12,9 @@
 </header>
 <section id= "perfil">
   <div class= "titulo">Full Stack Developer</div>
+  <p class="tagline">   <!-- A las clases se les da un identidicador para despues darle estilo sobre ese identificador -->
+  Desarrollador enfocado en bases de datos, análisis de información y soluciones funcionales.
+</p>
   <img src= "yo.jpeg" 
        alt= "Foto de perfil Matehuala">
   <div class="info">
@@ -19,54 +22,74 @@
       <b>Fecha de nacimiento:</b> 01/10/1997 <br>
       <b>Radico en:</b> CMDX<br>
       <b>Teléfono:</b> 55 8076 1435<br>
-      <button id="btnProyectos">Ver Otras ideas</button>
+      <b>Redes:</b> <a href="https://www.linkedin.com/in/mmy-matehuala/" target="_blank">
+    LinkedIn
+  </a>
+ <br>
+      
+<a href="MMY_25.pdf" download>
+  <button id="btnCV">Descargar CV</button>
+</a>
+<div class="skills">
+  <span>PL/SQL</span> <!-- Un span es un contenedor en linea recta -->
+  <span>SQL</span>
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JavaScript</span>
+  <span>Tableu</span>
+</div>
+
   </div>
 </section>
 
   <section id="biografia">
-      <h3>Conoce un poco acerca de mí</h3>
-            <br>
-            Mi pasión por las bases de datos comenzó en 2019 cuando realizaba mi servicio social en <b>TELMEX</b>, 
-            donde me sorprendió el volumen de información que se manejaba y la eficiencia con la que estaba estructurada. 
-            Aunque en aquel entonces solo me dedicaba a la depuración de datos, comprendí la importancia de mantener estándares 
-            para garantizar la integridad de la información.
-            <br>
-       <h2>Inicios en el mundo de la tecnología</h2>
-            <br>
-            Tras mi experiencia en TELMEX, ingresé a <b>ILSP (actualmente AI27) en el año de 2020</b>, donde trabajé en el área de <b>Helpdesk</b>. 
-            Allí, me encargaba de la validación de aplicativos a primer nivel y la generación de métricas mensuales sobre datos 
-            de seguimiento GPS en transportes. Fue en este puesto donde comencé a trabajar con bases de datos en <b>PostgreSQL</b>.
-            <br>
-            <br>
-       <h4>Primeros desarrollos en bases de datos</h4>
-            <p>
-              En <b>Grupo Salinas</b>, tuve la oportunidad de crear bases de datos desde cero para sistemas internos, incluyendo:
-          </p>
-          <ul>
-              <li><b>Registro de campañas</b> en días festivos (Día de Reyes, Día de las Madres, Navidad, etc.).</li>
-              <li><b>Sistema de denuncias internas</b> para reportar despidos injustificados, acoso laboral y otras problemáticas.</li>
-              <li><b>Gestión de seguros</b>, dando seguimiento a incidentes de los empleados.</li>
-          </ul>
-        <h5>Adquiriendo nuevos conocimientos</h5>
-          <p>
-            En <b>Price Shoes</b>, enfrenté nuevos retos al trabajar con <b>PL/SQL</b>. Aquí, los sistemas estaban enfocados en:
-        </p>
-        <ul>      <!--Inicio de una lista no ordenada -->
-            <li>Analizar ventas e inventarios.</li>     <!-- Elementos de la lista 1..n -->
-            <li>Proyectar ventas futuras.</li>
-            <li>Predecir los modelos más vendidos.</li>
-            <li>Optimizar estrategias de resurtido de productos.</li>
-        </ul>   <!--Fin de la lista no ordenada -->
-          <h2> Mindsait Indra</h2>
-        <h2>Situación actual</h2>
-        <p>
-            Actualmente, continúo desarrollándome en el mundo de las bases de datos, enfrentando nuevos desafíos 
-            y mejorando mis habilidades en el análisis y manejo de la información.
-        </p>
-      </section>
 
+  <div class="experience-section">
+    <h3>Experiencia Profesional</h3>
+    <br>
+    <div class="experience">
+      <h4>TELMEX · 2019</h4>
+      <p>
+        Servicio social enfocado en depuración de datos y control de estándares
+        para garantizar la integridad de la información.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h4>ILSP (AI27) · 2020</h4>
+      <p>
+        Área de Helpdesk y validación de aplicativos. Generación de métricas
+        mensuales y trabajo con bases de datos en PostgreSQL para seguimiento GPS.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h4>Grupo Salinas</h4>
+      <p>
+        Desarrollo de bases de datos desde cero para sistemas internos:
+        campañas, denuncias internas y gestión de seguros.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h4>Price Shoes</h4>
+      <p>
+        Trabajo con PL/SQL para análisis de ventas, inventarios, proyecciones
+        futuras y optimización de estrategias de resurtido.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h4>Minsait Indra · Actualidad</h4>
+      <p>
+        Desarrollo continuo en bases de datos, análisis y manejo de información,
+        enfrentando nuevos retos tecnológicos.
+      </p>
+    </div>
+
+  </div>
+</section>
        <br>
-
        <!-- Ventana Modal de Proyectos -->
   <div    id= "ventanaProyectos" 
        class= "modal">
@@ -74,7 +97,7 @@
       <span class= "cerrar">&times;</span>
       <h6>Mis Proyectos</h6>
       <ul>
-        <li><strong>Landing de eventos:</strong> Página web para promover eventos rave en México.</li>
+        <li><strong>Landing de eventos:</strong> Página web para promover eventos en México.</li>
         <li><strong>Proyecto 2:</strong> Descripción del proyecto 2.</li>
       </ul>
     </div>
