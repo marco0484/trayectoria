@@ -80,23 +80,39 @@ h2, h3, h4, h5, h7 {        /* Titulos de los trabajos que he tenido */
 }
 
 
-/* Sección de biografía */
-.experience-section {
-  margin-top: 20px;
+/* Sección Experiencia */
+#experiencia {
+  margin-top: 40px;
 }
 
-.experience h4 {
-  color: #0f0f10;
-  font-size: 20px;
-  margin-bottom: 5px;
+/* Cada bloque de experiencia */
+#experiencia .experience {
+  margin-bottom: 28px;
 }
 
-.experience p {
-  color: #444;
-  font-size: 18px;
+/* Título del puesto */
+#experiencia .experience h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111;
+  letter-spacing: 0.3px;
+}
+
+/* Descripción */
+#experiencia .experience p,
+#experiencia .experience ul {
+  font-size: 14px;
   line-height: 1.6;
+  color: #555;
+  margin: 0;
 }
 
+/* Para lista */
+#experiencia .experience ul {
+  padding-left: 18px;
+  margin-top: 6px;
+}
 
 #btnCV {             /* Seccion otras ideas */
     margin: 20px 40px;
