@@ -1,130 +1,238 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Estilo para encabezados */
-h1 {
-    margin-left: 500px;
-    font-size: 20px;
-    color: #090808;
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
 }
 
-h2, h3, h4, h5, h7 {        /* Titulos de los trabajos que he tenido */
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 20px;
-    color: #060606;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
 }
 
-.tagline { /* Etiqueta de presentación */
-  font-size: 16px;
-  color: #797676;
-  margin-top: 8px;
+.navbar nav a{
+margin-left:20px;
+text-decoration:none;
+color:#555;
+font-size:14px;
+font-weight:500;
 }
+
+.navbar nav a:hover{
+color:#000;
+}
+
+.logo{
+font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 60px;
+gap:40px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:32px;
+margin-bottom:20px;
+color:#111;
+}
+
+.tagline{
+font-size:16px;
+color:#555;
+}
+
+.hero-img img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* BOTONES */
+
+.buttons{
+margin-top:25px;
+}
+
+.btn{
+padding:10px 20px;
+border:none;
+background:#111;
+color:white;
+cursor:pointer;
+margin-right:10px;
+border-radius:6px;
+font-size:14px;
+}
+
+.btn.secondary{
+background:#0077b5;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+/* INFO */
 
 .info{
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-    }
-
-.skills {
-  display: grid;
-  gap: 20px;
+padding:40px 60px;
+background:white;
+margin-top:20px;
 }
 
-.skill-group span {
-  display: inline-block;
-  background: #eef4ff;
-  color: #1a4fd8;
-  padding: 6px 12px;
-  border-radius: 12px;
-  margin: 4px;
-  font-size: 14px;
+.info h2{
+margin-bottom:20px;
 }
 
-/* Sección de perfil */
-
-#perfil .titulo {
-    font-size: 20px; /* Tamaño grande para el título */
-    line-height: 1.5;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px; /* Espacio más pequeño entre el título y la imagen */
+.info p{
+margin-bottom:8px;
 }
 
-/* Sección de perfil */
-#perfil {
-    display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    align-items: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centrado de todo el contenido */
+/* SKILLS */
+
+.skills{
+padding:60px;
 }
 
-#perfil img {
-    width: 180px;
-    height: 180px;
-    border-radius: 10%;
-    margin-right: 10px;
-    border: 2px solid #ddd;
+.skills h2{
+margin-bottom:30px;
+}
+
+.skill-group{
+margin-bottom:25px;
+}
+
+.skill-group h4{
+margin-bottom:10px;
+}
+
+.skill-group span{
+display:inline-block;
+background:#e9eef5;
+padding:6px 12px;
+margin:4px;
+border-radius:5px;
+font-size:13px;
+}
+
+/* EXPERIENCIA */
+
+.experience-section{
+background:white;
+padding:60px;
+}
+
+.experience-section h2{
+margin-bottom:40px;
+}
+
+.experience{
+background:#f7f9fc;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.experience h4{
+margin-bottom:10px;
+}
+
+.experience ul{
+padding-left:20px;
+}
+
+.experience li{
+margin-bottom:6px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:white;
+margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-img img{
+width:240px;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:50%;
+border:4px solid #2c3e50;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
 }
 
 
-/* Sección Experiencia */
-#experiencia {
-  margin-top: 40px;
+/* ICONOS*/
+
+.social-link{
+  font-size:40px;
+  position:relative;
 }
 
-/* Cada bloque de experiencia */
-#experiencia .experience {
-  margin-bottom: 28px;
+.external{
+  font-size:14px;
+  margin-left:6px;
+  opacity:0;
+  transition:0.3s;
 }
 
-/* Título del puesto */
-#experiencia .experience h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #111;
-  letter-spacing: 0.3px;
+.social-link:hover .external{
+  opacity:1;
 }
 
-/* Descripción */
-#experiencia .experience p,
-#experiencia .experience ul {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-  margin: 0;
+.icon-link i {
+  font-size: 24px; /* tamaño de los iconos */
+  margin-left: 5px; /* espacio entre el icono de LinkedIn y la flecha */
+  vertical-align: middle; /* alineación vertical */
+  color: #0A66C2; /* opcional, color de LinkedIn */
 }
 
-/* Para lista */
-#experiencia .experience ul {
-  padding-left: 18px;
-  margin-top: 6px;
+.icon-link:hover i {
+  transform: scale(1.2); /* efecto hover para que crezcan un poco */
 }
-
-#btnCV {             /* Seccion otras ideas */
-    margin: 20px 40px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4ca5af;
-    color: white;
-    border: none;
-    border-radius: 10px;  /* Bordeado del boton*/
-    cursor: pointer;
-  }
-  
-  #btnCV:hover {
-    background-color: #f74803;
-  }
